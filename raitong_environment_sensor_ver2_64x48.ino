@@ -171,7 +171,7 @@ void loop() {
     String timeStampString = get_timestamp();
     //    Serial.println(timeStampString);
 
-    dataString = timeStampString + String(tempVal) + ", " + String(humidVal) + ", " + String(lightVal) + "\n";
+    dataString = timeStampString + String(tempVal) + ", " + String(humidVal) + ", " + String(lightVal);
 
     File dataFile = SD.open("datalog.txt", FILE_WRITE);
 
